@@ -1,6 +1,5 @@
 # Movie Recommendation System
 
-![Movie Recommendation](path_to_your_image.png)  <!-- Optional: Add a project image here -->
 
 ## Project Overview
 
@@ -50,10 +49,23 @@ The project utilizes the [MovieLens dataset](https://grouplens.org/datasets/movi
 
 ## Project Structure
 
-movie-recommendation-system/ │ ├── data/ # Contains dataset files │ ├── movies.csv │ └── ratings.csv │ ├── notebooks/ # Jupyter notebooks for exploratory data analysis │ └── data_exploration.ipynb │ ├── models/ # Model implementations │ ├── knn_model.py │ ├── autoencoder_model.py │ ├── ncf_model.py │ └── transformer_model.py │ ├── requirements.txt # Python package dependencies └── README.md # Project documentation
 
-markdown
-Copy code
+|           File                      | Description                                    |
+|-------------------------------------|------------------------------------------------|
+| `movie-recommendation-system/`      | Root directory for the project                |
+| `data/`                             | Contains dataset files                        |
+| ├── `movies.csv`                   | Movie metadata                                 |
+| └── `ratings.csv`                  | User ratings data                             |
+| `notebooks/`                       | Jupyter notebooks for exploratory data analysis|
+| └── `data_exploration.ipynb`       | Data exploration notebook                      |
+| `models/`                          | Model implementations                          |
+| ├── `knn_model.py`                 | K-Nearest Neighbors model                     |
+| ├── `autoencoder_model.py`          | Autoencoder model                             |
+| ├── `ncf_model.py`                 | Neural Collaborative Filtering model           |
+| └── `transformer_model.py`          | Transformer-based model                       |
+| `README.md`                        | Project documentation      
+
+
 
 ## Methodologies
 
@@ -70,13 +82,27 @@ Copy code
 3. **Evaluation:**
    - Assessed the performance of each model using precision and recall metrics.
    - Visualized the results using Matplotlib to compare the effectiveness of different methodologies and inform optimizations.
+  
+
+
+
+    ## Graph for data
+   ### sample for movies.csv
+
+  ![image](https://github.com/user-attachments/assets/bfad25de-cf41-4675-a81f-3fae213dcaca)
+
+
+
+
+  ![image](https://github.com/user-attachments/assets/4e7d2e12-1ab1-42ff-8a14-f33dd835e159)
+
 
 ## Installation
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/Vikramjeetsingh07/Movie-Recomendation-system-using-KNN-Autoencoders-NCF-transformers
-   cd movie-recommendation-system
+   cd movie-recommendation
 
 Usage
 Load the dataset and preprocess it:
@@ -108,11 +134,17 @@ Evaluation
 The models are evaluated using precision and recall metrics. Results are visualized to assess the strengths and weaknesses of each approach, leading to informed optimizations.
 
 Results
-KNN: Precision: 0.5, Recall: 0.1
-Autoencoders: (Add specific metrics)
-Neural Collaborative Filtering: (Add specific metrics)
-Transformer Model: (Add specific metrics)
-(You can include plots or visual representations of results here.)
+Autoencoders: Precision:- 0.54
+Neural Collaborative Filtering: Precision:- 0.75
+Transformer Model: Precision:- 0.73
+![image](https://github.com/user-attachments/assets/727ceadc-6d95-457c-a4da-70181d1f7729)
+
+![image](https://github.com/user-attachments/assets/0225b9c4-ccb6-455b-b791-d9969b6d7d7d)
+
+![image](https://github.com/user-attachments/assets/40721411-6187-4047-bc54-3ee99a5b3dde)
+
+
+
 
 Contributing
 Contributions are welcome! Please feel free to submit a pull request or raise an issue to discuss improvements and enhancements.
